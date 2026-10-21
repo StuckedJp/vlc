@@ -95,6 +95,7 @@ enum libvlc_event_e {
     libvlc_MediaPlayerAudioDevice,
     libvlc_MediaPlayerChapterChanged,
     libvlc_MediaPlayerRecordChanged,
+    libvlc_MediaPlayerProgramChanged,
 
     libvlc_MediaListItemAdded=0x200,
     libvlc_MediaListWillAddItem,

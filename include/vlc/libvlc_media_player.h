@@ -966,6 +966,16 @@ LIBVLC_API int libvlc_media_player_is_seekable( libvlc_media_player_t *p_mi );
  */
 LIBVLC_API int libvlc_media_player_can_pause( libvlc_media_player_t *p_mi );
 
+/** Local VLC 3 extension: program/service selection. Lists use the existing
+ * libvlc_track_description_list_release() ownership convention. */
+#define LIBVLC_MEDIA_PLAYER_HAS_PROGRAMS 1
+LIBVLC_API libvlc_track_description_t *
+libvlc_media_player_get_programs( libvlc_media_player_t *p_mi );
+/** Returns the selected service ID, or -1 if there is no active input. */
+LIBVLC_API int libvlc_media_player_get_program( libvlc_media_player_t *p_mi );
+/** Queue a service change. Zero means accepted, not switch completion. */
+LIBVLC_API int libvlc_media_player_set_program( libvlc_media_player_t *p_mi, int id );
+
 /**
  * Check if the current program is scrambled
  *
