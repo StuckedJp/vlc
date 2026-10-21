@@ -49,6 +49,7 @@ struct demux_sys_t
     stream_t   *stream;
     bool        b_canseek;
     bool        b_canfastseek;
+    bool        b_slowseek;
     vlc_mutex_t     csa_lock;
 
     /* TS packet size (188, 192, 204) */
