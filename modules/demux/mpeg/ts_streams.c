@@ -124,6 +124,7 @@ ts_pmt_t *ts_pmt_New( demux_t *p_demux )
 
     pmt->i_last_dts = VLC_TICK_INVALID;
     pmt->i_last_dts_byte = 0;
+    pmt->b_boundary_probe_attempted = false;
 
     pmt->p_atsc_si_basepid      = NULL;
     pmt->p_si_sdt_pid = NULL;
