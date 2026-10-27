@@ -79,7 +79,6 @@ static const struct
     int         i_renderer_flags;
 } protocols[] = {
     { "ftp", "_ftp._tcp.local", false, 0 },
-    { "smb", "_smb._tcp.local", false, 0 },
     { "nfs", "_nfs._tcp.local", false, 0 },
     { "sftp", "_sftp-ssh._tcp.local", false, 0 },
     { "rtsp", "_rtsp._tcp.local", false, 0 },
